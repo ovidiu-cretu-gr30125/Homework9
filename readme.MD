@@ -73,7 +73,9 @@ public class Client {
 
 1. Add  in exercise1 package classes from listing above and execute the code. Notice the mechanism used to send notifications to AlarmMonitor each time Alarm object change it's state. 
 2. Create a class AlarmController and register an object of this type as observer for the Alarm object. Each time controller is notified will print messaje "Sending SMS message to owner."
-3. Create UML class diagram of the program.   
+3. Create UML class diagram of the program. 
+
+![Exercise 2 image](docs/Exercise1.jpg)  
 
 ## Exercise 2
 A system is composed of 1 controller and 3 sensor types (TEMPERATURE, HUMIDITY, PRESSURE). Each sensor has a `void readSensor()` method which, when executed will randomly generate a value. 
