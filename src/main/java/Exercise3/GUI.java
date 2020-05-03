@@ -23,7 +23,7 @@ public class GUI  extends JFrame implements ActionListener{
     /**
      * the constructor of the graphical user interface
      * initialize the frame
-     * @throws Exception
+     * @throws Exception tenant already exists exception
      */
     public GUI() throws Exception {
         setSize(350,200);
@@ -38,6 +38,9 @@ public class GUI  extends JFrame implements ActionListener{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    /**
+     * initializer for the elements from the frame
+     */
     public void Initializer() {
 
         // Initialize type access code label
@@ -82,6 +85,10 @@ public class GUI  extends JFrame implements ActionListener{
 
 
     }
+
+    /**
+     * initializer for the wrong pin dialog box
+     */
     public void InitializeDialogForWrongPin(){
 
         //Initialize wrong pin dialog box
@@ -116,6 +123,10 @@ public class GUI  extends JFrame implements ActionListener{
             }
         });
     }
+
+    /**
+     * initializer for the master key dialog box
+     */
     public void InitializeDialogForMasterKey() {
 
         //Initialize wrong pin dialog box
@@ -136,6 +147,11 @@ public class GUI  extends JFrame implements ActionListener{
         this.wrongPinDialog.add(masterKeyLabel);
         this.wrongPinDialog.add(tryAgainButton);
     }
+
+    /**
+     * method for the action of the enter code button
+     * @param actionEvent
+     */
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
 
